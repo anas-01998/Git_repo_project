@@ -1,0 +1,64 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+body {
+  background-color: rgb(245, 238, 220);
+}
+
+.linkedin {
+  width: 200px;
+  height: 200px;
+  background: rgb(rgb(237, 240, 226, .25));
+  border-radius: 50%;
+}
+
+.logo1 {
+  width: 100px;
+  height: 100px;
+}
+
+figcaption {
+  display: inline;
+  font-weight: bold;
+}
+
+#projecticon {
+  height: 30px;
+  width: 30px;
+}
+
+figure {
+  display: inline;
+  margin: 70px;
+  justify-content: space-evenly;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;
+  background: beige;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {
+    margin-left: 0
+  }
+}

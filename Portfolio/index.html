@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#skills" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>SKILLS</p>
+    </a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large">
+      <img src="/Assets/diagram-project-solid.svg" alt="projects" id="projecticon">
+      <p>PROJECTS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-sand" id="home">
+
+      <img src="/Assets/linkdinpp.jpg" alt="linkedinpp" class="linkedin">
+      <h1 class="w3-jumbo">Anas El-Ghailani</h1>
+      <h3>Aspiring Front-End Developer</h3>
+
+      <a href="/Assets/Anas_El-Ghailani-Dev-CV.doc"><button
+          class="w3-button w3-light-grey w3-padding-large w3-section href">
+          <i class="fa fa-download download-button"></i> Download Resume
+        </button></a>
+      <br>
+      <a href="https://github.com/anas-01998?tab=repositories" target="_blank"><i
+          class="fa fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/anas-el-ghailani/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    </header>
+
+    <!-- About Section -->
+    <section>
+      <div class=" w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2>About</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>Hardworking aspiring software developer, looking to join an organisation of people who are willing to take on
+          someone eager to learn. I am looking to expand my knowledge and experience within the frontend and backend. I
+          recently graduated, wanting a fresh start in something that I previously had experience with and have found
+          coding to be a refreshing challenge. </p>
+
+        <p>Completed JustIT's 12 week intensive boot camp, covering the fundamentals of Web and Software
+          development. The languages which i trained in were: HTML&CSS, Bootstrap, JavaScript, MySQL and Python. Learnt
+          key
+          concepts and put them into practice via my projects which you can see below.
+        </p>
+      </div>
+
+      <div class="w3-content w3-justify  w3-padding-64" id="skills">
+        <h2 class="w3-padding-16">My Skills</h2>
+        <div>
+          <figure>
+            <img src="/Assets/html5.svg" alt="html" class="logo1">
+            <figcaption>
+              <bold>HTML</bold>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/Assets/css3-alt.svg" alt="css" class="logo1">
+            <figcaption>CSS</figcaption>
+          </figure>
+          <figure>
+            <img src="/Assets/bootstrap.svg" alt="bs" class="logo1">
+            <figcaption>Bootstrap</figcaption>
+          </figure>
+          <figure>
+            <img src="/Assets/js.svg" alt="js" class="logo1">
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <img src="Assets/mysql.png" alt="sql" class="logo1">
+            <figcaption>MySQL</figcaption>
+          </figure>
+          <figure>
+            <img src="/Assets/python-logo.svg" alt="py" class="logo1">
+            <figcaption>Python</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+  </div>
+
+
+  <!-- Project Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
+    <h2 lass="w3-padding-16">Projects</h2>
+    <div class="w3-row-padding" style="margin:0 -16px">
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Notes Page</li>
+          <li class="w3-padding-16">HTML, CSS, JavaScript</li>
+          <li class="w3-padding-16">Notes Page can add, delete, updates and view the notes</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="/Assets/notespage/notespg.html" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">View Project</button></a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Calculator</li>
+          <li class="w3-padding-16">HTML, CSS, JavaScript</li>
+          <li class="w3-padding-16">Performs the operations of addition, subtraction, multiplication and division.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="/Assets/calculator/index.html" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">View Project</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Registration Form</li>
+          <li class="w3-padding-16">Python, mySQL</li>
+          <li class="w3-padding-16">Sign up form using SQLite, takes details of a person and allows you to
+            perform different operations on it.
+            You can add, remove, update, display records and display records with a certain criteria.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://replit.com/@anaselghailni27/People-Database?v=1" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">View Project</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Film Flix Database</li>
+          <li class="w3-padding-16">Python, mySQL</li>
+          <li class="w3-padding-16">Film Database using SQLite, takes details of a film and perform different operations
+            on it.
+            You can add, remove, update, display records. In addition, display records with a certain criteria.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="https://replit.com/@anaselghailni27/Film-Flix-DataBase?v=1" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">View Project</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Perfume Template Website</li>
+          <li class="w3-padding-16">HTML, CSS and JavaScript</li>
+          <li class="w3-padding-16">A website for perfume that I made, with a professional layout and matching colour
+            schemes.</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="Assets/Website/index.html" target="_blank"><button
+                class="w3-button w3-white w3-padding-large w3-hover-black">View Project</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2>Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> London, United Kingdom</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +44 7704669242</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: anaselghailni@hotmail.co.uk</p>
+      </div><br>
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="https://formsubmit.co/anaselghailni@hotmail.co.uk" target="_blank" method="POST">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+
+    </div>
+
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
+
+</body>
+
+</html>
